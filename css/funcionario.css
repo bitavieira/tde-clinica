@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu-lateral {
+    width: 248px;
+    flex-shrink: 0;
+    padding: 28px 20px;
+    background: #f8faf7;
+    border-right: 1px solid #dce3dd;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+    background: #f2f5f1;
+}
