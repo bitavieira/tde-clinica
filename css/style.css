@@ -1,0 +1,89 @@
+/* Identidade visual compartilhada */
+:root {
+    --fundo: #f8faf7;
+    --superficie: #ffffff;
+    --verde: #2f4d3f;
+    --texto: #24332c;
+    --texto-secundario: #69766f;
+    --selecionado: #dce8e0;
+    --apoio: #e7f0ea;
+    --borda: #dce3dd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--verde);
+    line-height: 1.25;
+}
+
+p {
+    color: var(--texto-secundario);
+}
+
+a {
+    color: var(--verde);
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+/* Botões e links com aparência de botão */
+button,
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 12px 20px;
+    border: 1px solid var(--verde);
+    border-radius: 12px;
+    background: var(--verde);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.botao:hover {
+    background: var(--texto);
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+    outline: 3px solid var(--verde);
+    outline-offset: 3px;
+}
+
+/* Formulários */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--superficie);
+    color: var(--texto);
+}
+
+textarea {
+    resize: vertical;
+}
