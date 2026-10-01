@@ -4,53 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/funcionario.css">
+
 
 </head>
 <body>
     <header>
+        <aside class="menu-lateral">
+            <img src="../../img/logo.png" alt="Logo da Clínica Vida">
         <nav class="navbar-funcionario">
             <ul>
-                <li><a href="cadastrar-paciente.html">Cadastrar Paciente</a></li>
-                <li><a href="cadastrar-agendamento.html">Nova Consulta</a></li>
-                <li><a href="cadastrar-profissional.html">Cadastrar Profissional</a></li>
-                <li><a href="funcionario-login.html">Sair</a></li>
-            </ul>
+    <li><a href="Inicio.html" aria-current="page">Agenda</a></li>
+    <li><a href="../pacientes/cadastrar-paciente.html">Pacientes</a></li>
+    <li><a href="../profissionais/profissionais.html">Profissionais</a></li>
+</ul>
         </nav>
+        </aside>
     </header>
     <main>
-        <h1>Área do Funcionário</h1>
-        <p>Bem-vindo à área do funcionário da Clínica Vida.</p>
+        <header class="cabecalho-agenda">
+    <div class="introducao-agenda">
+        <p class="identificacao-area">Recepção</p>
+        <h1>Agenda Diária Multiprofissional</h1>
+        <p>Compare horários e encontre rapidamente a melhor disponibilidade da equipe.</p>
+    </div>
+    <div class="seletor-data">
+    <button type="button" aria-label="Dia anterior">‹</button>
 
+    <div class="data-agenda">
+        <time datetime="2026-10-01">1 de outubro</time>
+        <span>Quinta-feira · 2026</span>
+    </div>
 
+    <button type="button" aria-label="Próximo dia">›</button>
+</div>
+</header>
+
+<div class="acoes-agenda">
+    <a href="../agenda/cadastrar-agendamento.html" class="botao">
+        + Novo Agendamento
+    </a>
+</div>
         <!-- Seção de Agendamentos -->
 
         <section id="agendamentos">
         <h2>Agendamentos</h2>
         <table>
             <thead>
-                <tr>
-                    <th>Paciente</th>
-                    <th>Data</th>
-                    <th>Hora</th>
-                    <th>Profissional</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>João Silva</td>
-                    <td>2024-06-15</td>
-                    <td>10:00</td>
-                    <td>Dra. Maria Souza</td>
-                </tr>
-                <tr>
-                    <td>Maria Oliveira</td>
-                    <td>2024-06-16</td>
-                    <td>14:30</td>
-                    <td>Dr. Carlos Lima</td>
-                </tr>
-            </tbody>
-        </table>        
+    <tr>
+        <th scope="col">Horário</th>
+        <th scope="col">Dra. Helena Costa</th>
+        <th scope="col">Dr. João Mendes</th>
+        <th scope="col">Dra. Maria Santos</th>
+        <th scope="col">Dra. Ana Clara</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th scope="row">08:00</th>
+
+        <td>
+            <div class="consulta">
+                <strong>Lucas Ferreira</strong>
+                <p>Presencial · 50 min</p>
+            </div>
+        </td>
+
+        <td>
+            <a class="horario-disponivel"
+               href="../agenda/cadastrar-agendamento.html">
+                <strong>+ Disponível</strong>
+                <span>Clique para agendar</span>
+            </a>
+        </td>
+
+        <td>
+            <div class="consulta">
+                <strong>Fernanda Nunes</strong>
+                <p>Presencial · 50 min</p>
+            </div>
+        </td>
+
+        <td>
+            <a class="horario-disponivel"
+               href="../agenda/cadastrar-agendamento.html">
+                <strong>+ Disponível</strong>
+                <span>Clique para agendar</span>
+            </a>
+        </td>
+    </tr>
+</tbody>
+
+            <div class="acoes-agenda">
+    <a href="../agenda/cadastrar-agendamento.html" class="botao">
+        + Novo Agendamento
+    </a>
+</div>
+        </section>
     </main>
 </body>
 </html>
