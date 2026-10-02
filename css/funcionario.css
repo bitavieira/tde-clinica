@@ -5,9 +5,10 @@ body {
 
 .menu-lateral {
     width: 248px;
+    flex-grow: 0;
     flex-shrink: 0;
     padding: 28px 20px;
-    background: #f8faf7;
+    background: #5e854b;
     border-right: 1px solid #dce3dd;
 }
 

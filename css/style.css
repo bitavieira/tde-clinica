@@ -58,7 +58,8 @@ button,
 
 button:hover,
 .botao:hover {
-    background: var(--texto);
+    background: ;
+    colo
 }
 
 :where(a, button, input, select, textarea):focus-visible {
