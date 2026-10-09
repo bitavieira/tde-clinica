@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda | Clínica Vida</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body class="pagina-agenda">
+    <header>
+        <aside class="menu-lateral">
+            <h2>Clínica Vida</h2>
+        <nav class="navbar-funcionario">
+            <ul>
+    <li><a href="#agendamentos" aria-current="page">Agenda</a></li>
+    <li><a href="#cadastrar-paciente">Pacientes</a></li>
+    <li><a href="index.html#profissionais">Profissionais</a></li><li><a href="login.html">Sair</a></li>
+</ul>
+        </nav>
+        </aside>
+    </header>
+    <main>
+        <header class="cabecalho-agenda">
+    <div class="introducao-agenda">
+        <p class="identificacao-area">Recepção</p>
+        <h1>Agenda Diária Multiprofissional</h1>
+        <p>Compare horários e encontre rapidamente a melhor disponibilidade da equipe.</p>
+    </div>
+    <p>Agenda de exemplo · 1 de outubro de 2026</p></header>
+
+<div class="acoes-agenda">
+    <a href="#novo-agendamento" class="botao">
+        + Novo Agendamento
+    </a>
+</div>
+        <!-- Seção de Agendamentos -->
+
+        <section id="agendamentos">
+        <h2>Agendamentos</h2>
+        <table>
+            <thead>
+    <tr>
+        <th scope="col">Horário</th>
+        <th scope="col">Dra. Helena Costa</th>
+        <th scope="col">Dr. João Mendes</th>
+        <th scope="col">Dra. Maria Santos</th>
+        <th scope="col">Dra. Ana Clara</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th scope="row">08:00</th>
+
+        <td>
+            <div class="consulta">
+                <strong>Lucas Ferreira</strong>
+                <p>Presencial · 50 min</p>
+            </div>
+        </td>
+
+        <td>
+            <a class="horario-disponivel"
+               href="#novo-agendamento">
+                <strong>+ Disponível</strong>
+                <span>Clique para agendar</span>
+            </a>
+        </td>
+
+        <td>
+            <div class="consulta">
+                <strong>Fernanda Nunes</strong>
+                <p>Presencial · 50 min</p>
+            </div>
+        </td>
+
+        <td>
+            <a class="horario-disponivel"
+               href="#novo-agendamento">
+                <strong>+ Disponível</strong>
+                <span>Clique para agendar</span>
+            </a>
+        </td>
+    </tr>
+</tbody>
+</table>
+</section>
+    <section id="novo-agendamento" class="painel">
+<h2>Novo agendamento</h2>
+<form id="form-cadastrar-agendamento">
+<label for="paciente-agendamento">Paciente</label>
+<select id="paciente-agendamento" name="paciente" required>
+<option value="">Selecione o paciente</option><option>Lucas Ferreira</option><option>Fernanda Nunes</option></select>
+<label for="data-agendamento">Data</label><input id="data-agendamento" name="data" type="date" required>
+<label for="hora-agendamento">Horário</label><input id="hora-agendamento" name="hora" type="time" required>
+<label for="profissional-agendamento">Profissional</label>
+<select id="profissional-agendamento" name="profissional" required><option value="">Selecione o profissional</option>
+<option>Dra. Helena Costa</option><option>Dr. João Mendes</option><option>Dra. Maria Santos</option><option>Dra. Ana Clara</option></select>
+<button type="submit">Conferir agendamento</button>
+</form></section>
+<section id="cadastrar-paciente" class="painel"><h2>Cadastro de paciente</h2><form id="form-cadastrar-paciente" >
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <label for="emitirnota">Emitir Nota Fiscal:</label>
+                <input type="checkbox" id="emitirnota" name="emitirnota">
+
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+                <button type="submit">Conferir cadastro</button>
+
+            </form></section>
+<p id="retorno-formulario" role="status">Demonstração: os formulários não salvam dados.</p>
+</main>
+<script>
+document.querySelectorAll("form").forEach(function (form) {
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const mensagem = document.getElementById("retorno-formulario");
+        mensagem.textContent = "Campos validados. Este protótipo ainda não salva dados.";
+        mensagem.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+});
+</script>
+</body>
+</html>

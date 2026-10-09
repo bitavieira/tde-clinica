@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Area do funcionario</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="pagina-login">
     <header class="cabeçalho">
         <h1>Clinica Vida</h1>
         <p>Cuidado humanizado e saúde para toda a família</p>
         <nav id="nav-bar-login">
             <ul>
-                <li><a href="../../index.html">Voltar</a></li>
+                <li><a href="index.html">Voltar</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="login-container">
         <h1>Login</h1>
-        <form id="form-login"action="" method="POST">
+        <form id="form-login">
             <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required><br><br>
+            <input type="text" id="username" name="username" required autocomplete="username"><br><br>
 
             <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}"><br><br>
+            <input type="password" id="password" name="password" required autocomplete="current-password"><br><br>
 
-            <input type="submit" value="Entrar">
+            <button type="submit">Entrar na demonstração</button>
         </form>
         <p id="error-message" style="color: red;"></p>
-        <p><a href="esqueci-senha.html">Esqueci minha senha</a></p>
+        <p>Protótipo: os dados não são autenticados nem enviados.</p>
         </section>
     </main>
+<script>
+document.getElementById("form-login").addEventListener("submit", function (event) {
+    event.preventDefault();
+    window.location.href = "agenda.html";
+});
+</script>
 </body>
 </html>
